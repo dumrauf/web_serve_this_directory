@@ -56,7 +56,7 @@ Note that since `qr_encode` could be detected, a QR has been generated and can b
 
 ### Stopping the Web Server
 
-The web server can be stopped by pressing `Ctrl-C`; this is actually standard Python web server behaviour. The full output for the above example is
+The web server can be stopped by pressing `Ctrl-C`; this is actually standard Python web server behaviour. The full output for the above example on Python2 is
 ```
 $ ./web-serve-this-directory.sh -p 8000
 Visit http://192.168.1.162:8000 from your mobile to download files in this directory.
