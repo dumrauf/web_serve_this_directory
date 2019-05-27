@@ -6,7 +6,7 @@ In case `qrencode` can be detected, a QR code with the URL of the web server is 
 
 > **Warning**:  This web server is great for quick and dirty experimentation in a development environment. DO NOT use this web server in a production environment! It is unsuitable for the task, does not scale well, and there are better options available. Instead choose one of the battle tested web server such as [nginx](http://nginx.org/).
 
-See also [link-to-come]() for a more detailed explanation on why the world is better off with a 100 line Bash script that's essentially wrapping a one line command; for Python2 that is
+See also [Transfer Files to Your Mobile By Scanning a QR Code](https://www.how-hard-can-it.be/transfer-files-to-your-mobile-by-scanning-a-qr-code/) on [How Hard Can It Be?!](https://www.how-hard-can-it.be/) for a more detailed explanation on why the world is better off with a 100 line Bash script that's essentially wrapping a one line command; for Python2 that is
 ```
 python -m SimpleHTTPServer
 ```
@@ -91,7 +91,7 @@ Below is a list of frequently asked questions.
 
 ### Why is there no HTTPS Support?
 
-The server is intended to be a simple lightweight way to serve files from a local network. It should not be used to transfer sensitive files. However, it seems to be possible to add HTTPS support. Feel free to improve as outlined below, so we can make things better for everyone.
+The server is intended to be a simple lightweight way to serve files on a local network. It should not be used to transfer sensitive files. However, it seems to be possible to add HTTPS support. Feel free to improve as outlined below, so we can make things better for everyone.
 
 ### I Know How to Make This Better!
 
