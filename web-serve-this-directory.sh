@@ -12,7 +12,6 @@ set -e
 # Set the default audio speed to 1 (equivalent to leaving the audio unchanged)
 IS_GENERATING_QR_CODE_DEFAULT=true
 # Name of the QR code file to be potentially generated
-QR_CODE_FILE_NAME="webserver_url.jpg"
 
 
 
@@ -80,16 +79,8 @@ echo "Visit http://${ip_address}:${port} from your mobile or tablet to download 
 if $is_generating_qr_code
 then
     # Encode URL as QR code
-    qrencode "${url}" -o "${QR_CODE_FILE_NAME}"
-    echo "Scan ${url}/${QR_CODE_FILE_NAME} from your phone or tablet for instant access"
-
-    # Helper function for cleaning up temporary files
-    function finish {
-        rm "${QR_CODE_FILE_NAME}"
-    }
-
-    # Ensure proper cleanup, regardless of the exit status of the script
-    trap finish EXIT
+    qrencode "${url}" -t ansiutf8
+    echo "Scan the QR code from your phone or tablet for instant access"
 fi
 
 # Start Python web server
