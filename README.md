@@ -42,16 +42,8 @@ The current directory can be served over HTTP on port `8000` via
 ./web-serve-this-directory.sh -p 8000
 ```
 
-In case the local IP address is `192.168.1.162`, this will start the web server and produce the following output
-```
-$ ./web-serve-this-directory.sh -p 8000
-Visit http://192.168.1.162:8000 from your mobile to download files in this directory.
-Scan http://192.168.1.162:8000/webserver_url.jpg with your mobile for quicker access
-Press Ctrl-C to stop the web sever
-Serving HTTP on 0.0.0.0 port 8000 ...
-```
-
-Note that since `qr_encode` could be detected, a QR has been generated and can be accessed on http://192.168.1.162:8000/webserver_url.jpg.
+In case the local IP address is `192.168.1.162`, this will start the web server and produce the following output:
+![Screenshot showing the output](doc/images/screenshot_qr_code.png)
 
 
 ### Stopping the Web Server
@@ -60,7 +52,7 @@ The web server can be stopped by pressing `Ctrl-C`; this is actually standard Py
 ```
 $ ./web-serve-this-directory.sh -p 8000
 Visit http://192.168.1.162:8000 from your mobile to download files in this directory.
-Scan http://192.168.1.162:8000/webserver_url.jpg with your mobile for quicker access
+[...QR...]
 Press Ctrl-C to stop the web sever
 Serving HTTP on 0.0.0.0 port 8000 ...
 ^CTraceback (most recent call last):
